@@ -1,0 +1,84 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+
+}
+
+h1,
+.h1 {
+
+}
+
+h2,
+.h2 {
+
+}
+
+h3,
+.h3 {
+
+}
+
+h4,
+.h4 {}
+
+h5,
+.h5 {}
+
+h6,
+.h6 {}
+
+
+
+
+a {
+  text-decoration: none;
+  transition: $transition;
+
+  &:hover {
+    color: $black;
+    opacity: .8;
+  }
+}
+
+
+button[type="submit"],
+.btn-prime {
+  @include reset-input;
+  width: auto;
+  display: inline-block;
+  padding: ($line-global/2) $line-global;
+  text-align: center;
+  font-size: $type-body-med;
+  line-height: $line-global;
+  background: $black;
+  color: $white;
+  transition: $transition;
+
+
+  &:not(:disabled):hover {
+    background: lighten($black, 10%);
+  }
+
+  &:hover {
+    color: $white;
+  }
+}
+
+
+.styled-select {
+  position: relative;
+
+  select {
+    @include reset-input;
+    font-family: $font-body;
+    font-size: $type-body-med;
+    line-height: $line-global;
+    padding-right: $line-global;
+    color: currentColor;
+    width: 100%;
+  }
+}
